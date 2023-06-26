@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.0' // Update to the latest Gradle version if needed
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Module-specific configurations
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30 // Adjust the SDK version if needed
+    defaultConfig {
+        applicationId "your.application.package.name"
+        minSdkVersion 21 // Adjust the minimum SDK version if needed
+        targetSdkVersion 30 // Adjust the target SDK version if needed
+        versionCode 1 // Adjust the version code if needed
+        versionName "1.0" // Adjust the version name if needed
+    }
+    // Other Android-specific configurations
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0' // Add OkHttp dependency here
+    // Other dependencies
+}

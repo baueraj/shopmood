@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "shopmood"
+version = "0.1.0"
+description = "An app that suggests products based on user's mood using emotion recognition technology."
+authors = ["AJB"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+fastapi = "^0.68.1"
+uvicorn = "^0.15.0"
+sqlalchemy = "^1.4.23"
+asyncpg = "^0.24.0"
+psycopg2-binary = "^2.9.1"
+Pillow = "^8.3.2"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pypi-public"
+url = "https://pypi.org/simple/"

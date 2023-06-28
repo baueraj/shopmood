@@ -1,0 +1,29 @@
+sudo service postgresql status
+
+
+
+ChatGPT
+You can view the contents of your PostgreSQL database using the psql command-line interface. Here's how you can do it:
+
+Login to PostgreSQL: Run the following command in your terminal to login to PostgreSQL as the postgres user:
+
+bash
+Copy code
+sudo -u postgres psql
+This will start the PostgreSQL interactive terminal program.
+
+Connect to your database: In the PostgreSQL interactive terminal program, run the following command to connect to your shopmood database:
+
+sql
+Copy code
+\c shopmood
+View the contents of your table: You can view the contents of your products table with the following SQL command:
+
+sql
+Copy code
+SELECT * FROM products;
+This will display all rows from the products table.
+
+Exit the PostgreSQL interactive terminal program: You can exit the PostgreSQL interactive terminal program by typing \q and pressing Enter.
+
+Remember to replace shopmood with the name of your database, and products with the name of your table.

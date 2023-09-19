@@ -30,6 +30,7 @@ jupyterlab = "^4.0.3"
 openai = "^0.27.8"
 transformers = "^4.31.0"
 torch = "^2.0.1"
+vosk = "^0.3.45"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

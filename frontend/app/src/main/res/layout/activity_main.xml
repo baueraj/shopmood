@@ -21,6 +21,11 @@
         android:layout_height="wrap_content"
         android:text="Record" />
 
+    <Button
+        android:id="@+id/btnSendAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Audio" />
 
     <ImageView
         android:id="@+id/image_view"
